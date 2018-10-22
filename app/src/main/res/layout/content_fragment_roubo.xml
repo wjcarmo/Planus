@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_fragment_roubo"
+    android:background="@color/corFundoDasTelas"
+    android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/layoutidentificacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPergunta001"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txtPergunta001"
+            android:textAlignment="textStart"
+            android:textColor="@color/corBalaoAmarelo"
+            android:textSize="@dimen/FontePadrao"
+            tools:text="@string/txtPergunta001"
+            android:gravity="start"
+            android:layout_gravity="start" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRespostaNao"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button"
+                android:text="@string/RespostaNao" />
+
+            <Button
+                android:id="@+id/btnResposta001"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button"
+                android:text="@string/RespostaSim" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/layoutquemsofreuoroubo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPergunta02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txtPergunta002"
+            android:textAlignment="textStart"
+            android:textColor="@color/corBalaoAmarelo"
+            android:textSize="@dimen/FontePadrao"
+            tools:text="@string/txtPergunta002"
+            android:gravity="start"
+            tools:ignore="DuplicateIds" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRespostaComercio"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button"
+                android:text="@string/txtSofreuORouboComercio" />
+
+            <Button
+                android:id="@+id/btnSofreuORouboTerceiro"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button"
+                android:text="@string/txtSofreuORouboTerceiro"
+                tools:text="@string/txtSofreuORouboTerceiro" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout  android:id="@+id/layoutmeiodeviolencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/txtPergunta003"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txtPergunta003"
+            android:textAlignment="textStart"
+            android:textColor="@color/corBalaoAmarelo"
+            android:textSize="@dimen/FontePadrao"
+            tools:text="@string/txtPergunta003"
+            android:gravity="start" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnArmaDeFogo"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/txtTipoDeViolencia01" />
+
+            <Button
+                android:id="@+id/btnArmaBranca"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/txtTipoDeViolencia02" />
+
+            <Button
+                android:id="@+id/btnArmaNaoDemonstrada"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/txtTipoDeViolencia03"
+                tools:text="@string/txtTipoDeViolencia03" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/layoutTempoOcorrido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/txtPergunta004"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txtPergunta004"
+            android:textAlignment="textStart"
+            android:textColor="@color/corBalaoAmarelo"
+            android:textSize="@dimen/FontePadrao"
+            tools:text="@string/txtPergunta004"
+            android:gravity="start" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTempoAte10"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/txtTempoAte10Min" />
+
+            <Button
+                android:id="@+id/btnTempoDe10a20"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/txtTempoDe10a20Min" />
+
+            <Button
+                android:id="@+id/btnTempoDe20a30"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/txtTempoDe20a30Min"
+                tools:text="@string/txtTempoDe20a30Min" />
+
+            <Button
+                android:id="@+id/btnTempoDe30a40"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/txtTempoDe30a40Min"
+                tools:text="@string/txtTempoDe30a40Min" />
+
+            <Button
+                android:id="@+id/btnTempoDe40a60"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button"
+                android:text="@string/txtTempoAcimaDe60Min"
+                tools:text="@string/txtTempoAcimaDe60Min" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/layoutdefulga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPergunta005"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txtPergunta005"
+            android:textAlignment="textStart"
+            android:textColor="@color/corBalaoAmarelo"
+            android:textSize="@dimen/FontePadrao"
+            tools:text="@string/txtPergunta005"
+            android:gravity="start" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFulgaAPe"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="@string/txtTipodeFuga01" />
+
+            <Button
+                android:id="@+id/btnFulgaDeCarro"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/txtTipodeFuga02" />
+
+            <Button
+                android:id="@+id/btnFulgaMoto"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/txtTipodeFuga03"
+                tools:text="@string/txtTipodeFuga03" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/layoutdecaracteristicas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPergunta006"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txtPergunta006"
+            android:textAlignment="textStart"
+            android:textColor="@color/corBalaoAmarelo"
+            android:textSize="@dimen/FontePadrao"
+            tools:text="@string/txtPergunta006"
+            android:gravity="start" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCaracterisitcasSim"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/txtCaracteristicaSim" />
+
+            <Button
+                android:id="@+id/btnCaracteristicasNao"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/txtCaracteristicaNao"
+                tools:text="@string/txtCaracteristicaNao" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/layoutdeimagens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPergunta007"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txtPergunta007"
+            android:textAlignment="textStart"
+            android:textColor="@color/corBalaoAmarelo"
+            android:textSize="@dimen/FontePadrao"
+            tools:text="@string/txtPergunta007"
+            android:gravity="start" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnImagensSim"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/txtCaracteristicaSim" />
+
+            <Button
+                android:id="@+id/btnImagensNao"
+                android:background="@drawable/selector_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AlturaBotao"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/txtCaracteristicaNao"
+                tools:text="@string/txtCaracteristicaNao" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

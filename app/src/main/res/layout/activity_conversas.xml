@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="seguranca.mas.planus.Activity.ActivityConversas">
+    <include layout="@layout/content_activity_conversas" />
+
+    <include
+        android:id="@+id/toolbarConversas"
+        layout="@layout/toolbar"
+
+        />
+
+
+    <ListView
+        android:id="@+id/lv_Conversas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarConversas"
+        android:layout_above="@id/layoutConversas"
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutConversas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/corBranca"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtConversas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Mensagem "
+            android:textColor="@color/corAmarelo"
+            android:textColorHint="@color/corAmarelo"
+            />
+        <ImageButton
+            android:id="@+id/btnEnviarConversa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fast_forward"
+            android:theme="@style/Animation.Design.BottomSheetDialog"
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

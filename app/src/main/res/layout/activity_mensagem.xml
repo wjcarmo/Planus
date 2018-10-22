@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mensagem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="seguranca.mas.planus.Activity.MensagemActivity">
+
+    <include
+        android:id="@+id/toolbar_principal"
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/iconeplanus" />
+
+    <EditText
+        android:id="@+id/txtCadEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="Digite o seu nome"
+        android:inputType="textPersonName"
+        android:padding="@dimen/CamposPadrao"
+        android:textColor="@color/corBranca"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorHint="@color/corBalaoChumbo"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="@dimen/FontePadrao" />
+
+    <EditText
+        android:id="@+id/txtidPais"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtCadEmail"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="+55"
+        android:inputType="number"
+        android:textColor="@color/corBranca"
+        android:textColorHint="@color/corBalaoChumbo"
+        android:textSize="@dimen/FontePadrao" />
+
+    <EditText
+        android:id="@+id/txtIdArea"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtidPais"
+        android:layout_alignBottom="@+id/txtidPais"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:ems="10"
+        android:hint="31"
+        android:inputType="number"
+        android:textColor="@color/corBranca"
+        android:textColorHint="@color/corBalaoChumbo"
+        android:textSize="@dimen/FontePadrao" />
+
+    <EditText
+        android:id="@+id/txtIdTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/txtIdArea"
+        android:ems="10"
+        android:hint="Seu telefone"
+        android:inputType="number"
+        android:textColor="@color/corBranca"
+        android:textColorHint="@color/corBalaoChumbo"
+        android:textSize="@dimen/FontePadrao" />
+
+    <Button
+        android:id="@+id/btnCadastraAqui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtIdArea"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/botoespadronizados"
+        android:text="@string/Cadastrar"
+        android:textColor="@color/corBranca" />
+</RelativeLayout>

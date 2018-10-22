@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Roubo"
+            android:icon="@drawable/ic_roubo_a_banco"
+            android:title="@string/InformarRoubo" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_invasao"
+            android:title="@string/InformarFurto" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/baseline_chat_black_18dp"
+            android:title="@string/InformarOcorrencia" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_videocam_black_24dp"
+            android:title="@string/CameraOnline" />
+        <item
+            android:id="@+id/cerco"
+            android:icon="@drawable/ic_av_timer_black_24dp"
+            android:title="@string/CercoEletronico" />
+    </group>
+
+    <item android:title="@string/comunic">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_phone_in_talk_black_24dp"
+                android:title="@string/Telefone" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/baseline_chat_bubble_outline_black_18dp"
+                android:title="Mensagem" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu_central"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corFundoDeTela"
+    android:orientation="vertical"
+    tools:context="seguranca.mas.planus.Activity.MenuCentralActivity">
+    <include
+        android:id="@+id/toolbar_principal"
+        layout="@layout/toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:layout_marginTop="50dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btnComerciario"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout
+                android:id="@+id/btnCardComerciario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_dark_background"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <ImageView
+                    android:id="@+id/BtnComerciario"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/balaoamarelo"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_remove_red_eye_black_24dp" />
+
+                <TextView
+
+                    android:id="@+id/txtComerciario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/olhovivo"
+                    android:textColor="@color/corBalaoAmarelo"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/cardview_light_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/olhovivodescricao"
+
+                    android:textColor="@color/corBalaoBranca" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp"
+
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_dark_background"
+                android:contextClickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/balaoazul"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_local_car_wash_black_24dp" />
+
+                <TextView
+                    android:id="@+id/TxtServicosPublicos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/olhovivoViaturas"
+                    android:textColor="@color/corBalaoAmarelo"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/cardview_light_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/ViaturasDescricao"
+                    android:textColor="@color/corBalaoBranca" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_dark_background"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <ImageView
+                    android:id="@+id/btnInformarRoubo"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/balaovermelho"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_directions_run_black_24dp" />
+
+                <TextView
+                    android:id="@+id/TxtUtilidadePublica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/olhovivoInformarRoubo"
+                    android:textColor="@color/corBalaoAmarelo"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/cardview_light_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/olhovivoRoubo"
+
+                    android:textColor="@color/corBalaoBranca" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_dark_background"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/balaobronze"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_voice_chat_black_24dp" />
+
+                <TextView
+                    android:id="@+id/TxtDenunciaDeCrime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/EnviarUmVideo"
+                    android:textColor="@color/corBalaoAmarelo"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/cardview_light_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/EnviarVideo"
+                    android:textColor="@color/corBalaoBranca" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>
+

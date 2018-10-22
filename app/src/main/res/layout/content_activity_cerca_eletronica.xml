@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="seguranca.mas.planus.planusmasseguranca.ActivityCercaEletronica"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_we_are_located_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/corFundoDeBotoes"
+            android:text="@string/label_located_in"
+            android:textColor="@color/corAmarelo"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:id="@+id/iv_ic_address"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignLeft="@+id/tv_we_are_located_in"
+            android:layout_alignStart="@+id/tv_we_are_located_in"
+            android:layout_below="@+id/tv_we_are_located_in"
+            android:layout_marginTop="@dimen/content_margin_top"
+            android:contentDescription="@string/desc_icon_address"
+            android:src="@drawable/transicao"
+            android:tint="@color/colorGreyIcon" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_ic_address"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/iv_ic_address"
+            android:layout_toRightOf="@+id/iv_ic_address"
+            android:text="@string/address"
+            android:textColor="@color/corAmarelo"
+            android:textSize="@dimen/text_size" />
+
+        <!--
+            O ImageView abaixo está sendo utilizado como hackcode
+            para que a imagem de background fique corretamente
+            posicionada na segunda parte de conteúdo da tela de
+            endereço. Este tipo de estratégia foi necessária, pois
+            a imagem quando definida como background no RelativeLayout
+            é na verdade parte do conteúdo dele, fazendo com que este
+            ViewRoot fique com as dimensões erradas em relação ao
+            protótipo estático apresentado para projeto.
+        -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rv_container"
+            android:layout_alignEnd="@+id/rv_container"
+            android:layout_alignLeft="@+id/rv_container"
+            android:layout_alignRight="@+id/rv_container"
+            android:layout_alignStart="@+id/rv_container"
+            android:layout_alignTop="@+id/rv_container"
+            android:contentDescription="@string/desc_background_address"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_user" />
+
+        <RelativeLayout
+            android:id="@+id/rv_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnMyLocation"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tv_whatsapp_contact_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/label_are_you_in_mall"
+                android:textColor="@color/corAmarelo"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:id="@+id/iv_ic_whatsapp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignLeft="@+id/tv_whatsapp_contact_label"
+                android:layout_alignStart="@+id/tv_whatsapp_contact_label"
+                android:layout_below="@+id/tv_whatsapp_contact_label"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="@dimen/content_margin_top"
+                android:contentDescription="@string/desc_icon_whatsapp"
+                android:onClick="DetalhesProximos"
+                android:src="@drawable/ic_contact_phone"
+                android:tint="@color/colorGreyIcon" />
+
+            <TextView
+                android:id="@+id/tv_whatsapp_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_ic_whatsapp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/iv_ic_whatsapp"
+                android:layout_toRightOf="@+id/iv_ic_whatsapp"
+                android:onClick="BuscaPorReferenciasProximas"
+                android:text="@string/whatsapp_number"
+                android:textColor="@color/corAmarelo"
+                android:textSize="@dimen/text_size" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnMyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_ic_address"
+            android:layout_alignStart="@+id/iv_ic_address"
+            android:layout_below="@+id/textView"
+            android:background="@color/corFundoDeBotoes"
+            android:padding="@dimen/CamposPadrao"
+            android:text="@string/myLocation"
+            android:textColor="@color/corAmarelo" />
+
+        <Button
+            android:id="@+id/btnOtherPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/btnMyLocation"
+            android:layout_alignBottom="@+id/btnMyLocation"
+            android:layout_toEndOf="@+id/tv_we_are_located_in"
+            android:layout_toRightOf="@+id/tv_we_are_located_in"
+            android:background="@color/corFundoDeBotoes"
+            android:onClick="BuscaPorReferenciasProximas"
+            android:padding="@dimen/CamposPadrao"
+            android:text="@string/OtherPlace"
+            android:textColor="@color/corAmarelo" />
+
+        <Button
+            android:id="@+id/btnReferencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnMyLocation"
+            android:layout_alignStart="@+id/btnMyLocation"
+            android:layout_below="@+id/imageView2"
+            android:background="@color/corFundoDeBotoes"
+            android:onClick="RecebeIdentificacao"
+            android:padding="@dimen/CamposPadrao"
+            android:text="@string/Referencia"
+            android:textColor="@color/corAmarelo" />
+
+        <Button
+            android:id="@+id/btnTipoDeArma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button5"
+            android:layout_alignBottom="@+id/button5"
+            android:layout_toEndOf="@+id/button5"
+            android:layout_toRightOf="@+id/button5"
+            android:background="@color/corFundoDeBotoes"
+            android:onClick="RecebeIdentificacao"
+            android:padding="@dimen/CamposPadrao"
+            android:text="@string/TipoDeArma"
+            android:textColor="@color/corAmarelo" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorAccent"
+            android:onClick="showRoute"
+            android:text="@string/label_view_route"
+            android:textAllCaps="true"
+            android:textColor="@color/corAmarelo"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnAPe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button"
+            android:layout_alignLeft="@+id/btnReferencia"
+            android:layout_alignStart="@+id/btnReferencia"
+            android:background="@color/corFundoDeBotoes"
+            android:onClick="RecebeIdentificacao"
+            android:text="@string/FulgaAPe"
+            android:textColor="@color/corAmarelo" />
+
+        <Button
+            android:id="@+id/btnCarro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnAPe"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/btnAPe"
+            android:layout_toRightOf="@+id/btnAPe"
+            android:background="@color/corFundoDeBotoes"
+            android:onClick="RecebeIdentificacao"
+            android:text="Carro"
+            android:textColor="@color/corAmarelo" />
+
+        <Button
+            android:id="@+id/btnMoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnCarro"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/btnCarro"
+            android:layout_toRightOf="@+id/btnCarro"
+            android:background="@color/corFundoDeBotoes"
+            android:onClick="RecebeIdentificacao"
+            android:src="@drawable/ic_action_user"
+            android:text="Moto"
+            android:textColor="@color/corAmarelo" />
+
+        <TextView
+            android:id="@+id/tv_difficulty_finding_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnReferencia"
+            android:layout_centerHorizontal="true"
+            android:text="@string/label_difficulty_finding_us"
+            android:textColor="@color/corAmarelo"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnReferencia"
+            android:layout_alignBottom="@+id/btnReferencia"
+            android:layout_toEndOf="@+id/btnAPe"
+            android:layout_toRightOf="@+id/btnAPe"
+            android:background="@color/corFundoDeBotoes"
+            android:text="Ok"
+            android:textColor="@color/corAmarelo" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_toEndOf="@+id/button4"
+            android:layout_toRightOf="@+id/button4"
+            android:background="@color/corFundoDeBotoes"
+            android:text="Ok"
+            android:textColor="@color/corAmarelo" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

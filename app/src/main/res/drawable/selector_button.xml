@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressionado e Habilitado -->
+    <item android:state_pressed="true" android:state_enabled="true">
+        <shape>
+            <solid android:color="#ff0000"/>
+        </shape>
+    </item>
+    <!-- Habilitado e não pressionado -->
+    <item android:state_enabled="true" android:state_pressed="false">
+        <shape>
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+    <!-- Desabilitado -->
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="#c9c9c9" />
+        </shape>
+    </item>
+
+    <shape
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <stroke
+            android:width="2dp"
+            android:color="@color/corFundoDeCampos"/>
+        <corners
+            android:radius="25dp"/>
+        <padding
+            android:left="2dp"
+            android:right="2dp"
+            android:top="2dp"
+            android:bottom="2dp"/>
+        <solid android:color="@color/corFundoDeCampos"/>
+
+    </shape>
+
+</selector>

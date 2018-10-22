@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">997860335008-hu4pm92ujplk3kr7a1lm56hitaohq5ri.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://planusseguranca.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">997860335008</string>
+    <string name="google_api_key" translatable="false">AIzaSyBw1Kp7BtbvsEg1zw70QqiO_k7_pLJZu1I</string>
+    <string name="google_app_id" translatable="false">1:997860335008:android:1b39ccdf4a8d89fb</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBw1Kp7BtbvsEg1zw70QqiO_k7_pLJZu1I</string>
+    <string name="google_storage_bucket" translatable="false">planusseguranca.appspot.com</string>
+    <string name="project_id" translatable="false">planusseguranca</string>
+</resources>

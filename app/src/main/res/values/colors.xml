@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#ae8001</color>
+    <color name="corFundoDeTela">#0b1b49</color>
+    <color name="corFundoDeCampos">#44442a</color>
+    <color name="corFundoDeBotoes">#01233d</color>
+    <color name="corFundoDasTelas">#030018</color>
+    <color name="corBalaoAzul">#2104ef</color>
+    <color name="corBalaoAmarelo">#c28f03</color>
+    <color name="corBalaoVermelho">#c23303</color>
+    <color name="corBalaoPrata">#c4c3bf</color>
+    <color name="corBalaoChumbo">#747473</color>
+    <color name="corBalaoBronze">#515151</color>
+    <color name="corBalaoBranca">#ccc9c9</color>
+    <color name="corAmarelo">#866e01</color>
+    <color name="corBranca">#ffffff</color>
+    <color name="corAzulClaro">#0d0b32</color>
+
+    <color name="colorPrimaryDark2">#595201</color>
+    <color name="colorAccent2">#01233d</color>
+
+    <color name="colorPrimary">#866e01</color>
+
+    <color name="colorAccent">#030018</color>
+
+    <color name="colorNavigationView">#F5F5F6</color>
+    <color name="colorItemNormal">#777777</color>
+
+    <color name="colorDarkTextLabel">#222222</color>
+    <color name="colorPurpleTextLabel">#0b1b49</color>
+    <color name="colorGreyIcon">#969FAA</color>
+
+
+</resources>

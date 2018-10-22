@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutDetalhes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/corFundoDeBotoes"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/MostraIconeDeGuarda"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="TODO"
+            android:contextClickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="1dp"
+            android:src="@drawable/guarda" />
+
+        <LinearLayout
+            android:id="@+id/layoutCidades"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/MargenDetalhes"
+            android:layout_marginTop="@dimen/MargenDetalhes"
+            android:layout_weight="1"
+            android:background="@color/corBranca"
+            android:orientation="vertical"
+            android:padding="@dimen/MargenDetalhes">
+
+
+            <EditText
+                android:id="@+id/txtCidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Informe a Cidade"
+                android:inputType="textAutoComplete|textPersonName"
+                android:padding="@dimen/MargenDetalhes"
+                android:textColor="@color/colorPrimaryDark2"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="@dimen/FontePadrao" />
+
+            <EditText
+                android:id="@+id/txtEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Informe Endereço"
+                android:inputType="textAutoComplete|textPersonName"
+                android:padding="@dimen/MargenDetalhes"
+                android:textColor="@color/colorPrimaryDark2"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="@dimen/FontePadrao" />
+
+            <Button
+                android:id="@+id/btnVisualizarTransito"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/corFundoDeBotoes"
+                android:elevation="0dp"
+                android:gravity="fill"
+                android:text="Visualizar"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark2"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutCarregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layoutDetalhes">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapViewCerco"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/MargenDetalhes" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,223 @@
+<resources>
+    <string name="app_name">+Planus</string>
+    <string name="olhovivo">COMERCIÁRIO</string>
+    <string name="olhovivodescricao">Acompanhe o andamento da Ocorrência</string>
+    <string name="olhovivoViaturas">SERVIÇOS PÚBLICOS</string>
+    <string name="ViaturasDescricao">Solicitação de Serviços aos cidadãos</string>
+    <string name="olhovivoInformarRoubo">UTILIDADES PÚBLICAS</string>
+    <string name="olhovivoRoubo">Informações importantes para a população</string>
+    <string name="EnviarVideo">Denúncias com verificação posterior</string>
+    <string name="EnviarUmVideo">DENÚNCIA DE CRIME</string>
+    <string name="EnviarMensagem">Viagem protegida</string>
+    <string name="DescricaoDaMensagem">Mensagem em tempo real</string>
+    <string name="Escolar">Escolar</string>
+    <string name="DescricaoDaCerca">Cerca Eletrônica</string>
+    <string name="Validacao">Validação</string>
+    <string name="MensagemValidacao"> Você recebeu um SMS para validação do seu número, digite o código de validação abaixo: </string>
+    <string name="Cadastrar">Cadastrar</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="RouboEmAndamento">Roubo Em Andamento</string>
+    <string name="username">Informe seu nome</string>
+    <string name="password">Informe sua senha</string>
+    <string name="comunic">Comunicação</string>
+    <string name="Telefone">Telefone Úteis</string>
+    <string name="Email">E-mails</string>
+    <string name="InformarRoubo">Roubo</string>
+    <string name="InformarFurto">Furto</string>
+    <string name="InformarOcorrencia">Ocorrências</string>
+    <string name="CameraOnline">Câmeras comércio on line</string>
+    <string name="CercoEletronico">Cerco eletrônico</string>
+
+
+    <string name="Trânsito">Situação do Trânsito</string>
+    <string name="CasoFortuito">Caso Fortuito</string>
+    <string name="Samu">Samu</string>
+    <string name="Denuncia">Denúncia</string>
+    <string name="utilidadePublica">Utilidade Pública</string>
+    <string name="terrrorismo">Antíterrosismo</string>
+    <string name="VideoFoto">Vídeo e Fotos</string>
+    <string name="Viagem">Viagem em Segurança</string>
+    <string name="Escola">Escolar Alteração Patrimonial</string>
+    <string name="Cerco">Cerco Eletrônico</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fragment_inicial">FragmentInicial</string>
+
+    <string name="title_activity_menu_principal_lateral">Planus Consultorias</string>
+
+
+    <string name="action_Camera">Foto</string>
+    <string name="action_Pesquisar">Pesquisar</string>
+    <string name="action_Contatos">Contatos</string>
+    <string name="action_Ocorrencia">Ocorrência</string>
+    <string name="action_Sair">Sair</string>
+    <string name="action_settings">Configuração</string>
+    <string name="Empresa">Planus Consultorias</string>
+    <string name="EmpresaCompleta">Segurança e Gestão Pública</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_cadastro_de_ocorrencias">CadastroDeOcorrencias</string>
+
+    <string name="Local">Location</string>
+    <string name="start_updates">START LOCATION UPDATES</string>
+    <string name="stop_updates">STOP LOCATION UPDATES</string>
+    <string name="get_last_location">GET LAST LOCATION</string>
+    <string name="title_activity_location">ActivityLocation</string>
+
+    <string name="navigation_drawer_open">Abrir menu gaveta</string>
+    <string name="navigation_drawer_close">Fechar menu gaveta</string>
+
+    <string name="label_services">Serviços</string>
+    <string name="label_bride_day">Dia de noiva</string>
+    <string name="label_packages">Pacotes</string>
+    <string name="label_schedule">Agendamento</string>
+    <string name="label_address">Endereço (rota em mapa)</string>
+
+    <string name="whatsapp_needed_info">
+        Instale o WhatsApp em seu aparelho.
+    </string>
+
+    <string name="label_located_in">Central de Atendimento:</string>
+    <string name="desc_icon_address">Ícone de endereço</string>
+    <string name="address">
+        Rua. Melo Viana, 187, sala 04 Centro - Nova Lima - MG - CEP: 34.000-282
+        (31) 3097-0501 - contato@planusconsultoria.com.br
+
+    </string>
+    <string name="desc_background_address">
+        Imagem de background da área de endereço.
+    </string>
+
+    <string name="label_are_you_in_mall">
+        Ocorrêcia de Roubo ? Será aberto uma ocorrência neste momento:
+    </string>
+    <string name="desc_icon_whatsapp">Ícone do WhatsApp</string>
+    <string name="whatsapp_number">
+        Nome para contato:
+    </string>
+
+    <string name="label_difficulty_finding_us">
+        Como foi a fulga ?
+    </string>
+    <string name="label_view_route">Visualizar rota</string>
+
+    <string name="apps_needed_info">
+        Instale o Google Maps ou algum navegador para poder visualizar
+        a rota.
+    </string>
+    <string name="title_activity_cerca_eletronica">Planus-Cerco Eletrôncio </string>
+    <string name="myLocation">Minha Localização</string>
+    <string name="OtherPlace">Outra Localização</string>
+    <string name="Referencia">Referência</string>
+    <string name="TipoDeArma">Arma</string>
+    <string name="FulgaAPe">A Pé</string>
+
+    <string name="RespostaSim">SIM</string>
+    <string name="RespostaNao">NÃO</string>
+    <string name="txtPergunta001">Deseja se Identificar ?</string>
+    <string name="txtPergunta002">Quem Sofreu o Roubo ?</string>
+    <string name="txtSofreuORouboEu">Eu</string>
+    <string name="txtSofreuORouboComercio">Meu Comércio</string>
+    <string name="txtSofreuORouboTerceiro">Cliente</string>
+    <string name="txtSofreuORouboFoiTerceiro">Você Presenciou</string>
+    <string name="txtSofreuORouboFoiInformadoPor">Alguém Informou ?</string>
+    <string name="txtPergunta003">Qual Tipo de Violência ?</string>
+    <string name="txtTipoDeViolencia01">Arma de Fogo</string>
+    <string name="txtTipoDeViolencia02">Arma Branca</string>
+    <string name="txtTipoDeViolencia03">Arma não demonstrada</string>
+    <string name="txtPergunta004">Quantos minutos ocorreram os fatos ?</string>
+    <string name="txtTempoAte10Min">10 Min</string>
+    <string name="txtTempoDe10a20Min">20 Min</string>
+    <string name="txtTempoDe20a30Min">30 Min</string>
+    <string name="txtTempoDe30a40Min">40 Min</string>
+    <string name="txtTempoAcimaDe60Min">01 hora</string>
+    <string name="txtPergunta005">A fuga ocorreu como ?</string>
+    <string name="txtTipodeFuga01">A pé</string>
+    <string name="txtTipodeFuga02">De Carro</string>
+    <string name="txtTipodeFuga03">De Moto</string>
+    <string name="txtPergunta006">Características do suspeito e veículo</string>
+    <string name="txtCaracteristicaSim">SIM</string>
+    <string name="txtCaracteristicaNao">NÃO</string>
+    <string name="txtPergunta007">Possui foto ou imagens ?</string>
+    <string name="title_activity_main_utilidade_publica">MainUtilidadePublica</string>
+    <string name="CarregarFoto">Carregar foto</string>
+    <string name="NomeDaFoto">Nome da foto</string>
+    <string name="SemInternet">Verifique o sinal da internet, sem internet algumas rotinas do aplicativo não estará disponível, para registrar
+    uma ocorrência é preciso estar conectado a internet. Obrigado.
+    </string>
+
+
+</resources>

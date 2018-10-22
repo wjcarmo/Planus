@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent2"
+    android:orientation="vertical"
+    android:padding="6dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/MostraIconeDeGuarda"
+            android:layout_width="200dp"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/MargenDetalhes"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="TODO"
+            android:contextClickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="1dp"
+            android:src="@drawable/ladraoum" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/corBranca"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/MostraTipodDoRoubo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/MargenDetalhes"
+                android:layout_toRightOf="@id/MostraIconeDeGuarda"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="Tipo da Ocorrencia"
+                android:textColor="@color/corAmarelo"
+                android:textSize="@dimen/FontePadrao"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/MostraQuemSofreuRoubo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/MargenDetalhes"
+                android:layout_toRightOf="@id/MostraIconeDeGuarda"
+                android:gravity="center_vertical"
+                android:textColor="@color/corAmarelo"
+                android:textSize="@dimen/fonteDetalhes"
+                tools:text="Mostra que sofreu o roubo" />
+
+            <TextView
+                android:id="@+id/MostraTipoDeViolencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/MostraIconeDeGuarda"
+                android:text="Mostra o tipo de arma"
+                android:textColor="@color/corAmarelo"
+                android:layout_margin="@dimen/MargenDetalhes"
+                android:textSize="@dimen/fonteDetalhes" />
+
+
+            <TextView
+                android:id="@+id/MostraTempoOcorrido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/MostraIconeDeGuarda"
+                android:text="Mostra há quanto tempo ocorreu"
+                android:textColor="@color/corAmarelo"
+                android:layout_margin="@dimen/MargenDetalhes"
+                android:textSize="@dimen/fonteDetalhes" />
+
+            <TextView
+                android:id="@+id/MostraTipoDaFulga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/MostraIconeDeGuarda"
+                android:text="Mostra como foi a fulga"
+                android:textColor="@color/corAmarelo"
+                android:layout_margin="@dimen/MargenDetalhes"
+                android:textSize="@dimen/fonteDetalhes" />
+            <TextView
+                android:id="@+id/MostraCaracteristicas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/MostraIconeDeGuarda"
+                android:text="Mostra Caracteristica do Suspeito"
+                android:textColor="@color/corAmarelo"
+                android:layout_margin="@dimen/MargenDetalhes"
+                android:textSize="@dimen/fonteDetalhes" />
+
+            <TextView
+                android:id="@+id/MostraDataOcorrencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/MostraIconeDeGuarda"
+                android:text="Mostra data da Ocorrência"
+                android:textColor="@color/corAmarelo"
+                android:layout_margin="@dimen/MargenDetalhes"
+                android:textSize="@dimen/fonteDetalhes" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

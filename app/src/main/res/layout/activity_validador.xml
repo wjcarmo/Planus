@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_validador"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/corFundoDeTela"
+    tools:context="seguranca.mas.planus.Activity.ValidadorActivity">
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        app:srcCompat="@drawable/iconeplanus"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/txtMensagenValidacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtValidador"
+        android:layout_marginTop="41dp"
+        android:padding="@dimen/CamposPadrao"
+        android:text="@string/MensagemValidacao"
+        android:textAlignment="center"
+        android:textColor="@color/corBranca"
+        android:textSize="@dimen/FontePadrao"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <TextView
+        android:id="@+id/txtValidador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:padding="@dimen/CamposPadrao"
+        android:text="@string/Validacao"
+        android:textColor="@color/corBranca"
+        android:textSize="@dimen/botoes"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <EditText
+        android:id="@+id/txtValidar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMensagenValidacao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="Digite o código:"
+        android:inputType="numberSigned"
+        android:padding="@dimen/CamposPadrao"
+        android:textAlignment="center"
+        android:textColor="@color/corBranca"
+        android:textColorHint="@color/corBranca"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="@dimen/FontePadrao"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <Button
+        android:id="@+id/btnValidar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtValidar"
+        android:layout_alignLeft="@+id/txtValidar"
+        android:layout_alignRight="@+id/txtValidar"
+        android:layout_alignStart="@+id/txtValidar"
+        android:layout_below="@+id/txtValidar"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/botoespadronizados"
+        android:text="Validar"
+        android:textColor="@color/corBranca"
+        android:textSize="@dimen/FontePadrao" />
+
+</LinearLayout>

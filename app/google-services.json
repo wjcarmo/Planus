@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "997860335008",
+    "firebase_url": "https://planusseguranca.firebaseio.com",
+    "project_id": "planusseguranca",
+    "storage_bucket": "planusseguranca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997860335008:android:1b39ccdf4a8d89fb",
+        "android_client_info": {
+          "package_name": "seguranca.mas.planus.planusmasseguranca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997860335008-g0mo4hhjkjapl2g639kos31eo06lbjcq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "seguranca.mas.planus.planusmasseguranca",
+            "certificate_hash": "1cc2c0da95c352a80cd87ee9e46bcfbb61b4b432"
+          }
+        },
+        {
+          "client_id": "997860335008-hu4pm92ujplk3kr7a1lm56hitaohq5ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw1Kp7BtbvsEg1zw70QqiO_k7_pLJZu1I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997860335008-hu4pm92ujplk3kr7a1lm56hitaohq5ri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
