@@ -1,8 +1,0 @@
-<application>
-  <component name="LanguageInjectionConfiguration">
-    <injection language="AIDL" injector-id="xml">
-      <display-name>application</display-name>
-      <place><![CDATA[xmlTag().withLocalName(string().equalTo("application"))]]></place>
-    </injection>
-  </component>
-</application>
