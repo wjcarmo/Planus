@@ -1,5 +1,9 @@
 <application>
   <component name="LanguageInjectionConfiguration">
+    <injection language="EditorConfig" injector-id="java">
+      <display-name>TextView.setText (android.widget)</display-name>
+      <place><![CDATA[psiParameter().ofMethod(0, psiMethod().withName("setText").withParameters("java.lang.CharSequence").definedInClass("android.widget.TextView"))]]></place>
+    </injection>
     <injection language="Manifest" injector-id="xml">
       <display-name>manifest</display-name>
       <place><![CDATA[xmlTag().withLocalName(string().equalTo("manifest"))]]></place>
